@@ -7,7 +7,7 @@ async function getPollutionData() {
   let responseData;
   try {
     const response = await fetch(
-      "http://api.airvisual.com/v2/nearest_city?key=8ae63174-26ce-4c8d-99ea-357ead152295"
+      "https://api.airvisual.com/v2/nearest_city?key=8ae63174-26ce-4c8d-99ea-357ead152295"
     );
     if (!response.ok) {
       throw new Error(`${response.status} Error, ${response.statusText}`);
